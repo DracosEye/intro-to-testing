@@ -15,6 +15,15 @@ describe('sayHello', function() {
     it('sayHello("Pat") should return the string "Hello, Pat!" when executed', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return "Hello, World!" when called with no argument', function() {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when called with true', function() {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when called with false', function() {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
 });
 
 // Unit tests for the helloWorld function

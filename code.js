@@ -4,5 +4,8 @@ function helloWorld() {
 }
 
 function sayHello(name) {
-   return `Hello, ${name}!`;
+    if (typeof name !== "string") {
+        return "Hello, World!";
+    }
+    return `Hello, ${name}!`;
 }
