@@ -1,3 +1,34 @@
+// Unit tests for isVowel
+describe('isVowel', function() {
+    it('should return a boolean when called', function() {
+        expect(typeof isVowel()).toBe("boolean");
+    });
+    it('should return true when called with argument "a"', function() {
+        expect(isVowel('a')).toBe(true);
+    });
+    it('should return true when called with argument "A"', function() {
+        expect(isVowel('A')).toBe(true);
+    });
+    it('should return false when called with argument "y"', function() {
+        expect(isVowel('y')).toBe(false);
+    });
+    it('should return false when called with argument 4', function() {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false when called with argument true', function() {
+        expect(isVowel(true)).toBe(false);
+    });
+    it('should return false when called with argument false', function() {
+        expect(isVowel(false)).toBe(false);
+    });
+    it('should return false when called with argument "banana"', function() {
+        expect(isVowel("banana")).toBe(false);
+    });
+    it('should return false when called with no argument', function() {
+        expect(isVowel()).toBe(false);
+    });
+});
+
 // Unit tests for isEven
 describe('isEven', function() {
     it('should return a boolean when called', function() {

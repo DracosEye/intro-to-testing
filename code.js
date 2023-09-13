@@ -21,3 +21,10 @@ function isFive(x) {
 function isEven(num) {
     return typeof num != "boolean" && num % 2 == 0;
 }
+
+function isVowel(letter) {
+    if (typeof letter == "string") {
+        return letter.toUpperCase() === 'A';
+    }
+    return false;
+}
