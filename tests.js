@@ -6,6 +6,15 @@ describe('sayHello', function() {
     it('should return a string when called', function() {
         expect(typeof sayHello()).toBe("string");
     });
+    it('sayHello("Jane") should return the string "Hello, Jane!" when executed', function() {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    });
+    it('sayHello("Alex") should return the string "Hello, Alex!" when executed', function() {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it('sayHello("Pat") should return the string "Hello, Pat!" when executed', function() {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
 });
 
 // Unit tests for the helloWorld function
