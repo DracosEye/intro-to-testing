@@ -9,3 +9,15 @@ function sayHello(name) {
     }
     return `Hello, ${name}!`;
 }
+
+function isFive(x) {
+    if (x === 5) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isEven(num) {
+    return typeof num != "boolean" && num % 2 == 0;
+}
