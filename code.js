@@ -28,3 +28,9 @@ function isVowel(letter) {
     }
     return false;
 }
+
+function add(num1, num2) {
+    if (!isNaN(parseInt(num1)) && !isNaN(parseInt(num2))) {
+        return parseInt(num1) + parseInt(num2);
+    }
+}
